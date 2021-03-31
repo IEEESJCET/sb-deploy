@@ -1,6 +1,12 @@
 .soc-logo {
   max-width: 300px;
 }
+
+@media screen and (max-width: 768px) {
+  .soc-logo {
+    max-width: 200px;
+  }
+}
 .logos-container {
   display: flex;
   flex-wrap: wrap;
