@@ -1,0 +1,59 @@
+a.btn-1 {
+  /* border-radius: 30px; */
+  border: 2px solid inherit;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  font-family: "Lato", sans-serif !important;
+  font-size: 0.9375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: normal;
+  min-width: 140px;
+  outline: none !important;
+  overflow: hidden;
+  padding: 0.76rem 1.5rem 0.83rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: 0.3s;
+  vertical-align: middle;
+}
+a.btn-1::after {
+  content: "\f061";
+  content: url(../icons/arrow.svg);
+  box-sizing: border-box;
+  display: block !important;
+
+  font-weight: 900;
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  margin-top: 1px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: right 0.3s;
+}
+a.btn-1:hover,
+a.btn-1:focus,
+a.btn-1:active {
+  transform: scale(1.01);
+  text-decoration: none !important;
+  padding-left: 0.5rem;
+  padding-right: 2.5rem;
+}
+a.btn-1:hover:after,
+a.btn-1:focus:after,
+a.btn-1:active:after {
+  right: 1rem;
+}
+a.btn-1 {
+  /* background: #fc0048;
+    border-color: #fc0048; */
+  background: #fff;
+  border-color: #fff;
+  color: #000 !important;
+}

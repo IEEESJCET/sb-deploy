@@ -1,0 +1,18 @@
+.blog-heading {
+  letter-spacing: -2px;
+  font-size: 4rem;
+}
+
+.blog-quote {
+  letter-spacing: -1px;
+}
+
+.blog-para {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+.blog-content {
+  max-width: 800px;
+}

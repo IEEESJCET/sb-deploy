@@ -1,0 +1,56 @@
+.hero {
+  height: 100vh;
+  background-image: url(../images/grp.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-img-gradient {
+  background-image: linear-gradient(to right bottom, #00509bcb, #04050ad0),
+    url(../images/grp.jpg);
+}
+
+.hero-text {
+  font-size: 4rem;
+}
+
+.hero-content {
+  margin-top: 45vh;
+  transform: translateY(-50%);
+  margin-left: 15vh;
+  max-width: 700px;
+}
+
+@media screen and (max-width: 640px) {
+  .hero-text {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .hero-content {
+    max-width: 350px;
+    margin-left: 5vh;
+  }
+}
+
+.scroller {
+  position: absolute;
+  bottom: 5vh;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}

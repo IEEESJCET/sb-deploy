@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Jak";
+  src: url(../fonts/Jakarta/PlusJakartaSans-Bold.woff) format("woff");
+
+  font-style: normal;
+  /* font-weight: 100; */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jak Light";
+  src: url(../fonts/Jakarta/PlusJakartaSans-ExtraLight.woff) format("woff");
+
+  font-style: normal;
+  /* font-weight: 100; */
+  font-display: swap;
+}
+
+.spacer {
+  margin-top: 100px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.playfair {
+  font-family: Playfair Display, Helvetica, sans-serif;
+}
+
+.rubik {
+  font-family: Rubik, Helvetica, sans-serif;
+}
+.lato {
+  font-family: Lato, Helvetica, sans-serif;
+}
+.jak {
+  font-family: "Jak", Arial, Helvetica, sans-serif;
+}
+
+.jak-light {
+  font-family: "Jak Light", Arial, Helvetica, sans-serif;
+}
+.bold {
+  font-weight: bold;
+}
+.text-heading {
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+}
+
+.text-grey {
+  color: rgb(75, 75, 75);
+}

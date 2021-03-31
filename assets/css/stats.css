@@ -1,0 +1,28 @@
+.stats {
+  background-color: #fff;
+
+  margin: 20px 20px;
+}
+
+.stats-master-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.stats-container {
+  margin: 30px 15px;
+}
+
+.stats-num {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: #006fd6cb;
+  letter-spacing: -2px;
+}
+
+.stats-icon {
+  max-width: 50px;
+}

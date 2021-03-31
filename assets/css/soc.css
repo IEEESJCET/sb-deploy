@@ -1,0 +1,22 @@
+.soc-logo {
+  max-width: 300px;
+}
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-left: 5vh;
+  margin-right: 5vh; */
+}
+
+/* @media screen and (min-width: 1200px) {
+  .logos-container {
+    max-width: 85vw;
+  }
+} */
+
+@media screen and (max-width: 991px) {
+  .soc-logo {
+    margin: 40px 0px;
+  }
+}
