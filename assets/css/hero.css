@@ -50,15 +50,21 @@
 }
 
 .scroller {
-  position: absolute;
-  bottom: 3%;
-  transform: translateX(200px);
-  animation: float 2s ease-in-out infinite;
 }
 
 .scroller-container {
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
+  /* margin-left: 50vw;
+  transform: translateX(-50%); */
+  /* transform: translateX(-50px); */
+
+  position: absolute;
+  bottom: 3%;
+  left: 47%;
+
+  transform: translateX(200px);
+  animation: float 2s ease-in-out infinite;
 }
 
 @keyframes float {
