@@ -25,12 +25,12 @@
   margin-left: 15vw;
   max-width: 700px;
 }
-
 @media screen and (max-width: 1200px) {
   .hero-content {
     margin-left: 5vw;
   }
 }
+
 @media screen and (max-width: 768px) {
   .hero-content {
     margin-top: 40vh;
@@ -45,7 +45,7 @@
   }
   .hero-content {
     max-width: 350px;
-    margin-left: 5vh;
+    margin-left: 5vw;
   }
 }
 
