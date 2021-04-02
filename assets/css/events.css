@@ -13,8 +13,13 @@
   display: flex;
   justify-content: center;
   padding: 20px;
-  font-family: Plus Jakarta Sans;
+  font-family: "Jak", Arial, Helvetica, sans-serif;
 }
+
+.item p {
+  margin-bottom: 0 !important;
+}
+
 .events-container {
   display: grid;
 
@@ -87,11 +92,7 @@
     url(../images/events/e4.jpeg);
   background-size: cover;
 }
-.content-1,
-.content-15,
-.content-2,
-.content-3,
-.sidebar {
+.item {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -99,11 +100,7 @@
 }
 
 /* Text content */
-.content-1 p,
-.content-15 p,
-.content-2 p,
-.content-3 p,
-.sidebar p {
+.item p {
   position: absolute;
   bottom: 30px;
 
@@ -113,10 +110,7 @@
   max-width: 60%;
 }
 
-.content-1 p,
-.content-15 p,
-.content-2 p,
-.content-3 p {
+.item:not(:first-child) p {
   font-size: 1.5rem;
   letter-spacing: -1px;
   margin-left: 20px;
@@ -124,11 +118,7 @@
 }
 
 /* Pointer icon */
-.content-1::after,
-.content-15::after,
-.content-2::after,
-.content-3::after,
-.sidebar::after {
+.item::after {
   content: url(../icons/slanted-arrow.svg);
 
   visibility: hidden;
@@ -142,11 +132,7 @@
   bottom: 30px;
 }
 
-.content-1:hover::after,
-.content-15:hover::after,
-.content-2:hover::after,
-.content-3:hover::after,
-.sidebar:hover::after {
+.item:hover::after {
   visibility: initial;
   transition: 2s;
 }
@@ -164,20 +150,12 @@
       "content-3";
   }
 
-  .content-1 p,
-  .content-2 p,
-  .content-15 p,
-  .content-3 p,
-  .sidebar {
+  .item:not(:first-child) p {
     bottom: 30px;
     font-size: 2.2rem;
   }
 
-  .content-1::after,
-  .content-15::after,
-  .content-2::after,
-  .content-3::after,
-  .sidebar::after {
+  .item::after {
     bottom: 45px;
     right: 30px;
   }
@@ -195,9 +173,8 @@
       "content-2"
       "content-3";
   }
-}
 
-.events p {
-  margin-bottom: 0 !important;
-  line-height: 2.5rem;
+  .events p {
+    line-height: 2.5rem;
+  }
 }
