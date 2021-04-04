@@ -1,7 +1,29 @@
 .map {
-  max-width: 93vw;
-  overflow: hidden;
+  /* max-width: 93vw;
+  overflow: hidden; */
   /* margin-left: 0;
   padding-left: 0;
   margin-right: 10px; */
+}
+
+.map iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.ro-icon {
+  width: 20px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.ro-container {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.4rem;
+}
+
+.addr {
+  letter-spacing: -1px;
 }

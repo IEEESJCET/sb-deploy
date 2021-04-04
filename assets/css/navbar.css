@@ -255,7 +255,7 @@ a {
     top: calc(var(--header-height) + 1rem);
     padding: 0.5rem 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
     margin-top: 5px;
   }
   .dropdown__item {
@@ -376,5 +376,14 @@ nav.sticky #nav-logo {
   }
   .nav__link:hover {
     color: #ccc;
+  }
+  #header-toggle {
+    margin-right: 20px;
+  }
+  .nav {
+    z-index: 10000;
+  }
+  .header {
+    height: 60px;
   }
 }

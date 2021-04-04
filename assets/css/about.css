@@ -10,10 +10,13 @@
     url(../images/placeholder.png);
 
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   width: auto;
-  height: 500px;
+  height: 100%;
+
+  /* max-width: 100%; */
+  aspect-ratio: 1/1;
 }
 
 .about-us {
@@ -22,7 +25,7 @@
 
 @media screen and (min-width: 991px) {
   .video-yt {
-    max-width: 70vw;
+    /* max-width: 70vw; */
     height: 500px;
   }
   .about-us {
@@ -78,7 +81,7 @@
 }
 
 .video-play-button:hover:after {
-  background-color: #053eda;
+  background-color: #025c97;
 }
 
 .video-play-button img {
@@ -168,4 +171,9 @@
   /* height: auto; */
   max-width: 95%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
 }
