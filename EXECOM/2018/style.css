@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+.card{
+    border: 0%;
+}
+h1,h3{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: normal;
+    font-style: italic;
+}
+
+.head{
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.text-muted{
+    font-size: 0.8rem;
+}
+ .cell:hover {
+        
+        transform: scale(1.1);
+        
+      }
+.rounded-circle{
+    width:15rem;
+    height: 15rem;
+}
+.fab, .fas{
+    font-size: 1.4rem;
+    color: #4a4f4b;
+}
+ 
