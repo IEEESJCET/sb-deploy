@@ -1,0 +1,41 @@
+.about p {
+  text-align: justify;
+}
+
+.dp {
+  width: 150px;
+  border-radius: 100px;
+}
+
+@media only screen and (min-width: 767px) {
+  .sect1{
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .about h3 {
+    text-align:center;
+  }
+  .logo{
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about p {
+    margin: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .logo img{
+    width: 220px;
+  }
+}
+
+@media only screen and (max-height: 500px) and (min-width: 768px){
+  .sect1{
+    margin-top: 150px;
+  }
+}

@@ -21,9 +21,63 @@
 .ro-container {
   display: flex;
   align-items: flex-start;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
 }
 
 .addr {
   letter-spacing: -1px;
+}
+
+.input-field {
+  border: 2px solid rgba(180, 180, 180, 0.267);
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px 0px;
+}
+
+.input-field:focus {
+  outline: none;
+  border: 2px solid #3d6eff;
+}
+
+.submit-btn {
+  display: block;
+  border: none;
+  padding: 10px 50px 10px 30px;
+  background-color: #3d6eff;
+  color: #fff;
+  transition: 0.2s;
+  position: relative;
+  border-radius: 5px;
+}
+
+.submit-btn::after {
+  content: url(../icons/arrow.svg);
+  position: absolute;
+  right: 20px;
+  filter: invert();
+}
+
+.submit-btn:hover {
+  padding-right: 60px;
+  background-color: rgb(0, 13, 130);
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+@keyframes loader-anim {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#submit-button.loader:after {
+  content: url(../icons/loader.svg);
+  animation: loader-anim 0.7s infinite ease-in;
 }
