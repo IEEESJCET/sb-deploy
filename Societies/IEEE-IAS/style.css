@@ -7,6 +7,60 @@
   border-radius: 100px;
 }
 
+a.more {
+  display: inline-block;
+  font-family: "Lato", sans-serif !important;
+  font-size: 0.9375rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  line-height: normal;
+  min-width: 140px;
+  outline: none !important;
+  overflow: hidden;
+  padding: 0.76rem 1.5rem 0.83rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  transition: 0.3s;
+  vertical-align: middle;
+  background: rgb(2, 158, 2);
+  color: #fff !important;
+  border-radius: 5px;
+}
+a.more::after {
+  content: "\f061";
+  content: url(arrow.svg);
+  box-sizing: border-box;
+  display: block !important;
+
+  font-weight: 900;
+  position: absolute;
+  right: -1rem;
+  top: 45%;
+  margin-top: 1px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: right 0.3s;
+  filter: invert(100%) sepia(77%) saturate(0%) hue-rotate(337deg)
+  brightness(103%) contrast(102%);
+}
+a.more:hover,
+a.more:focus,
+a.more:active {
+  transform: scale(1.01);
+  text-decoration: none !important;
+  padding-left: 0.5rem;
+  padding-right: 2.5rem;
+}
+a.more:hover:after,
+a.more:focus:after,
+a.more:active:after {
+  right: 1rem;
+}
+
 @media only screen and (min-width: 767px) {
   .sect1{
     height: 100vh;
@@ -19,6 +73,10 @@
   }
   .logo{
     padding-top: 40px;
+  }
+  .learn_more{
+    display: flex;
+    justify-content: center;
   }
 }
 

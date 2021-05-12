@@ -20,7 +20,7 @@
   --z-fixed: 100;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
   :root {
     --nav-name-font-size: 1rem;
     --normal-font-size: 1rem;
@@ -85,7 +85,7 @@ a {
 }
 
 /*===== NAV =====*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .nav {
     position: fixed;
     top: 0;
@@ -139,6 +139,9 @@ a {
 
 .nav__link {
   color: var(--first-color-light);
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: lighter;
 }
 
 .nav__link:hover {
@@ -192,7 +195,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
   body {
     margin: 0;
   }
@@ -278,7 +281,7 @@ header a {
   max-width: 200px;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 1070px) {
   .nav-logo {
     margin-left: 6rem;
   }
@@ -288,7 +291,7 @@ header a {
   margin-right: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .dropdown__menu {
     background-color: transparent;
   }
@@ -330,7 +333,7 @@ nav.sticky #nav-logo {
   filter: invert();
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .header {
     background-color: #fff !important;
   }
@@ -370,7 +373,7 @@ nav.sticky #nav-logo {
   color: blue !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .nav__link {
     color: #fff;
   }
