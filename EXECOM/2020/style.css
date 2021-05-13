@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'plusjakart';
-    src: url(/EXECOM/webfonts/PlusJakartaSans-Bold.woff2);
+    src: url(/EXECOM/webfonts/PlusJakartaSans-Bold.woff);
 }
  
  *{
@@ -31,7 +31,7 @@ h1,h3{
 
 .top{
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
+  /*  font-family:Arial, Helvetica, sans-serif;  */
 }
 .text-muted{
     font-size: 0.8rem;
@@ -39,7 +39,7 @@ h1,h3{
  .cell:hover {
         
         transform: scale(1.1);
-        
+        transition: 0.3s;
       }
 .rounded-circle{
     width:15rem;
