@@ -1,6 +1,12 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
+/*===== CUSTOM FONTS =====*/
+@font-face {
+  font-family: 'plusjakart';
+  src: url(/assets/fonts/Jakarta/PlusJakartaSans-Italic.woff2);
+}
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -138,6 +144,9 @@ a {
 
 .nav__link {
   color: var(--first-color-light);
+  font-size: 18px;
+  font-family: 'plusjakarta';
+  font-weight: 500;
 }
 
 .nav__link:hover {

@@ -1,3 +1,9 @@
+/*===== CUSTOM FONTS =====*/
+@font-face {
+  font-family: 'plusjakart';
+  src: url(/assets/fonts/Jakarta/PlusJakartaSans-Italic.woff2);
+}
+
 .footer * {
   font-size: initial;
   margin: 0;
@@ -51,12 +57,13 @@
   font-size: 20px;
   color: grey;
 }
-.footer2 h4,
-.footer3 h4,
-.footer4 h4,
-.footer1 h4 {
-  color: grey;
-  font-weight: 400;
+.footer2 h1,
+.footer3 h1,
+.footer4 h1,
+.footer1 h1 {
+  font-weight: 500;
+  font-family: 'plusjakarta';
+  font-size: 19px;
 }
 .footer hr {
   width: 90%;
@@ -92,14 +99,15 @@
 
 .footer_link
 {
-  font-size: 15px;
+  font-size: 17px;
   text-decoration: none;
-  color: rgb(104, 102, 102);
+  font-family: 'plusjakarta';
+  color: rgb(161, 161, 161);
 }
-    
+
 .footer_link:hover
 {
-  color: rgb(155, 150, 150);
+  color: rgb(128, 128, 128);
   text-decoration: none;
 }
 
@@ -113,3 +121,4 @@
 {
   text-decoration: none;
 }
+
