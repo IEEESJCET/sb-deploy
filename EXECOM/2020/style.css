@@ -9,7 +9,14 @@
     
  
 }
-
+.head_pad{
+    padding-top: 7em;
+}
+@media screen and (max-width:990px) {
+    .head_pad{
+        padding-top: 4em;
+    }
+}
 
     
 
