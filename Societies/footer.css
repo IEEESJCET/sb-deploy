@@ -1,0 +1,128 @@
+/*===== CUSTOM FONTS =====*/
+@font-face {
+  font-family: "plusjakarta";
+  src: url(/assets/fonts/Jakarta/PlusJakartaSans-Light.woff2);
+}
+
+.footer * {
+  font-size: initial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 2em;
+  padding: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: auto;
+  padding-left: auto;
+}
+.footer {
+  margin-top: 100px;
+  padding-left: 80px;
+  -webkit-box-shadow: 8px 8px 22px 0 rgba(50, 50, 50, 0.27);
+  -moz-box-shadow: 8px 8px 22px 0 rgba(50, 50, 50, 0.27);
+  box-shadow: 8px 8px 22px 0 rgba(50, 50, 50, 0.27);
+  /* padding-right: auto;
+    padding-left: auto; */
+}
+.col-4 {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/* .footer1 h1 {
+    font-size: 30px;
+  } */
+
+/* .footer1 {
+    display: block;
+  } */
+
+/* .footer1 h4 {
+    padding: 3px 0px;
+  } */
+
+.footer1 h4 {
+  font-weight: 100;
+}
+.footer1 i {
+  margin: 50px 20px;
+  font-size: 20px;
+  color: grey;
+}
+.footer2 h1,
+.footer3 h1,
+.footer4 h1,
+.footer1 h1 {
+  font-size: 17px;
+  font-family: "plusjakarta";
+  font-weight: 600;
+}
+.footer hr {
+  width: 90%;
+  margin: 0 auto;
+}
+.copyright {
+  padding: 30px;
+  text-align: center;
+  font-weight: 300;
+}
+.copyright p{
+  font-family: "plusjakarta";
+  font-weight:600;
+}
+.Social {
+  width: 300px;
+}
+.Social i:nth-child(1) {
+  margin-left: 0;
+  padding-left: 0;
+}
+@media screen and (max-width: 675px) {
+  .footer {
+    padding-left: 10px;
+  }
+}
+
+.Social i {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* .footer h4 {
+    padding: 10px 0px;
+  } */
+
+.footer_link
+{
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "plusjakarta";
+  color: rgb(156, 156, 156);
+  font-weight: 600;
+}
+
+.footer_link:hover
+{
+  color: rgb(105, 105, 105);
+  text-decoration: none;
+}
+
+.social_link
+{
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.social_link:hover
+{
+  text-decoration: none;
+}
+

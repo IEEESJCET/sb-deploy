@@ -39,7 +39,7 @@ a.more {
 }
 a.more::after {
   content: "\f061";
-  content: url(arrow.svg);
+  content: url(/Societies/arrow.svg);
   box-sizing: border-box;
   display: block !important;
 

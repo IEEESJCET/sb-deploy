@@ -284,6 +284,7 @@ header a {
 
 .nav-logo {
   max-width: 200px;
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 1070px) {
@@ -334,6 +335,7 @@ header a {
 .nav-logo {
   position: absolute;
   z-index: 10;
+  margin-top: -14px;
 }
 
 nav.sticky #nav-logo {
@@ -361,6 +363,7 @@ nav.sticky #nav-logo {
     position: initial;
     z-index: 1000;
     filter: invert();
+    margin-top: 0px;
   }
 }
 
