@@ -71,7 +71,7 @@
 /* Images and gradients */
 .content-1 {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.733)),
-    url(../images/events/e1.jpg);
+    url(../images/events/e4.jpg);
 }
 .content-2 {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.733)),
@@ -89,7 +89,7 @@
 }
 .sidebar {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.633)),
-    url(../images/events/e4.jpg);
+    url(../images/events/e1.jpg);
   background-size: cover;
 }
 .item {
