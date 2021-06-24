@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'plusjakart';
+    src: url(/EXECOM/webfonts/PlusJakartaSans-Bold.woff);
+}
+ 
+ *{
+    box-sizing: border-box;
+ /*   background-color: white; */
+    
+ 
+}
+.head_pad{
+    padding-top: 7em;
+}
+@media screen and (max-width:990px) {
+    .head_pad{
+        padding-top: 4em;
+    }
+}
+
+    
+
+.container h5, h3, h1{
+    font-weight: bolder;
+    font-family: "plusjakart"; 
+}
+.card{
+    border: 0%;
+}
+h1,h3, h2{
+    font-weight: bold;
+    
+    font-style: normal;
+    font-family: "plusjakart";
+}
+    
+}
+
+.top{
+    font-weight: bold;
+  /*  font-family:Arial, Helvetica, sans-serif;  */
+}
+.text-muted{
+    font-size: 0.8rem;
+}
+ .cell:hover {
+        
+        transform: scale(1.1);
+        transition: 0.3s;
+      }
+.rounded-circle{
+    width:15rem;
+    height: 15rem;
+}
+.fab, .fas{
+    font-size: 1.4rem;
+    color: #4a4f4b;
+}
+ 
