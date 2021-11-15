@@ -7,6 +7,13 @@
   border-radius: 100px;
 }
 
+.more:hover,
+.more:active,
+.more:focus{
+  color: white;
+}
+
+
 a.more {
   display: inline-block;
   font-family: "Lato", sans-serif !important;
@@ -26,7 +33,7 @@ a.more {
   text-decoration: none !important;
   transition: 0.3s;
   vertical-align: middle;
-  background: #0a8f4d;
+  background:  #cb7e29;
   color: #fff !important;
   border-radius: 5px;
 }
@@ -61,6 +68,10 @@ a.more:active:after {
   right: 1rem;
 }
 
+.logo img {
+  width: 300px;
+}
+
 @media only screen and (min-width: 767px) {
   .sect1{
     height: 100vh;
@@ -71,8 +82,9 @@ a.more:active:after {
   .about h3 {
     text-align:center;
   }
-  .logo{
-    padding-top: 40px;
+  .logo {
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
   .learn_more{
     display: flex;
@@ -88,7 +100,7 @@ a.more:active:after {
 
 @media only screen and (max-width: 376px) {
   .logo img{
-    width: 240px;
+    width: 280px;
   }
 }
 
@@ -97,3 +109,4 @@ a.more:active:after {
     margin-top: 150px;
   }
 }
+
