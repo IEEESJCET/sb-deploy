@@ -35,49 +35,37 @@
 .sidebar {
   grid-area: sidebar;
   padding-left: 20px;
-  
 }
 
 .content-1 {
   grid-area: content-1;
   padding-left: 20px;
-  
 }
 
 .content-15 {
   grid-area: content-15;
   padding-left: 20px;
-  
 }
-
 
 .content-2 {
   grid-area: content-2;
   padding-left: 20px;
-  
-
 }
-
 
 .content-3 {
   grid-area: content-3;
   padding-left: 20px;
-
- 
 }
 
-
-a.register{
-  text-decoration:none;
+a.register {
+  text-decoration: none;
   color: inherit;
 }
-.btn{
+.btn {
   text-align: center;
   min-width: 150px;
   border-radius: 0px;
 }
-
-
 
 /*  individual card item */
 .item {
@@ -116,7 +104,7 @@ a.register{
 }
 .sidebar {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.633)),
-    url(../images/events/e1.jpeg);
+    url(../images/events/e1.jpg);
   background-size: cover;
 }
 .item {
@@ -188,18 +176,9 @@ a.register{
   }
 }
 
-
 .sidebar {
   grid-area: sidebar;
- 
 }
-
-
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
   .events-container {
@@ -224,12 +203,9 @@ a.register{
   display: block;
   /* position: absolute; */
   /* top: 10px;
-  right: 10px; */ 
+  right: 10px; */
   color: rgb(194, 194, 194);
   letter-spacing: -1px;
   font-family: Inconsolata;
   max-width: 100%;
 }
-
-
-
