@@ -322,7 +322,7 @@
                 <option value="S7">S7</option>
               </select>
             </div>
-
+<!--
             <div class="radio">
               <span class="details"
                 >Are you an IEEE member ?<span id="red">*</span>
@@ -344,13 +344,15 @@
                 value="no"
                 onclick="text(1)"
               />No
-            </div>
+            </div>-->
             <div class="input-box" id="dis">
-              <span class="details">Membership ID</span>
+              <span class="details">Membership ID<span id="red">*</span></span>
               <input
                 type="text"
                 name="Id"
+                id="mem_id"
                 placeholder="Enter your Membership ID"
+                required
               />
             </div>
             <div class="radio">
@@ -364,6 +366,7 @@
                 id="PES Member"
                 value="Yes"
                 required
+                checked
                 
                 
               />Yes
@@ -386,7 +389,7 @@
                 id="SIGHT Member"
                 value="Yes"
                 required
-                
+                checked
                 
               />Yes
               <input
@@ -465,9 +468,11 @@
         var col_name = $("#col_name").val();
         var Branch = $("#Branch").val();
         var number = $("#number").val();
+        var mem_id = $("#mem_id").val();
         var Semester = $("#Semester").val();
+        
 
-        if (name != "" && email != "" && col_name != "" && number != "" && Branch != null && Semester != null) {
+        if (name != "" && mem_id && email != "" && col_name != "" && number != "" && Branch != null && Semester != null) {
           swal({
             title: "Thank You!",
             text: "Your registration is successful !!",
@@ -475,6 +480,14 @@
             button: "Go Back",
           }).then(function () {
             window.location = "https://ieee.sjcetpalai.ac.in/";
+          });
+        }
+        else{
+          swal({
+            title: "Error !",
+            text: "Please check your required fields!!",
+            icon: "error",
+            button: "Go Back",
           });
         }
       });
