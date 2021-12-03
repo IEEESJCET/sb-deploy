@@ -402,6 +402,8 @@
                 
               />No
             </div>
+
+            
         
 
             <div class="input-box2">
@@ -413,8 +415,15 @@
                 placeholder="Any comments/queries"
               />
             </div>
-          </div>
+           
+          
+            <div>Terms & Conditons <br>
+              1. Use a valid Membership ID while registering for the program. <br>
 
+              2. Register only if you are able to attend the program.</div> <br>
+          </div>
+        
+        
           <div class="button">
             <input id="button" type="submit" name="submit" value="Register"  />
           </div>
@@ -474,7 +483,7 @@
         var Semester = $("#Semester").val();
         
 
-        if (name != "" && mem_id && email != "" && col_name != "" && number != "" && Branch != null && Semester != null) {
+        if (name != "" && mem_id && email != "" && col_name != "" && number != "" && Branch != null && Semester != null ) {
           swal({
             title: "Thank You!",
             text: "Your registration is successful !!",
