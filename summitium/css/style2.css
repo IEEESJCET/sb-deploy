@@ -1,29 +1,31 @@
 @media (max-width: 700px) {
-    .grey-hover {
-        margin-bottom: 100px !important;
-    }
+  .grey-hover {
+    margin-bottom: 100px !important;
+  }
 }
 
 .why-text {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .grey-hover-1 {
-    height: 40px !important;
+  height: 40px !important;
 }
 .grey-hover-2 {
-    height: 90px;
+  height: 90px;
 }
 .grey-hover-3 {
-    height: 50px;
+  height: 50px;
 }
 .grey-hover-4 {
-    height: 90px;
-    margin-left: -100px;
+  height: 90px;
+  /* margin-left: -100px; */
 }
 .grey-hover-5 {
-    height: 60px;
+  height: 60px;
+  margin-left: 138px;
+  margin-right: 70px;
 }
 .grey-hover-6 {
-    height: 60px;
+  height: 60px;
 }
