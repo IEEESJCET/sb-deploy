@@ -7,3 +7,23 @@
 .why-text {
     line-height: 1.4;
 }
+
+.grey-hover-1 {
+    height: 40px;
+}
+.grey-hover-2 {
+    height: 90px;
+}
+.grey-hover-3 {
+    height: 50px;
+}
+.grey-hover-4 {
+    height: 90px;
+    margin-left: -100px;
+}
+.grey-hover-5 {
+    height: 60px;
+}
+.grey-hover-6 {
+    height: 60px;
+}
