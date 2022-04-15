@@ -86,25 +86,25 @@ a.register {
 /* Images and gradients */
 .content-1 {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.733)),
-    url(../images/events/e2.jpeg);
+    url(../images/events/e2.jpg);
 }
 .content-2 {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.733)),
-    url(../images/events/e4.jpeg);
+    url(../images/events/e4.jpg);
 }
 
 .content-15 {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.733)),
-    url(../images/events/e3.jpeg);
+    url(../images/events/e3.jpg);
 }
 
 .content-3 {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.733)),
-    url(../images/events/e5.jpeg);
+    url(../images/events/e5.jpg);
 }
 .sidebar {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.633)),
-    url(../images/events/e1.jpeg);
+    url(../images/events/e1.jpg);
   background-size: cover;
 }
 .item {
