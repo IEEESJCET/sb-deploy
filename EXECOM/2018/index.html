@@ -1,544 +1,860 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Execom2018</title>
 
-     <!--Favicon-->
-  <link rel="icon" href="/assets/icons/favicon.ico" type="image/gif" sizes="16x16">
+    <!--Favicon-->
+    <link
+      rel="icon"
+      href="/assets/icons/favicon.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
-<link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/EXECOM/navbar.css" />
     <link rel="stylesheet" href="/EXECOM/footer.css" />
-</head>
-<body>
-
-    
-            <!-- Navbar -->
+  </head>
+  <body>
+    <!-- Navbar -->
     <header class="header">
-        <!-- <a href="#" class="header__logo">IEEE SB SJCET</a> -->
-    
-        <a href="https://ieee.sjcetpalai.ac.in"> <img src="/EXECOM/logo.svg" alt="" class="nav-logo" id="nav-logo" />  </a> 
-        <i class="bx bx-menu header__toggle" id="header-toggle"></i>
+      <!-- <a href="#" class="header__logo">IEEE SB SJCET</a> -->
 
-        <nav class="nav" id="nav-menu">                            
- 
-            <div class="nav__content bd-grid">
-                <a href="" class="nav__perfil">
-                    <div class="nav__img">
-                        <img src="assets/img/perfil.jpg" alt="" />               
-                    </div>
+      <a href="https://ieee.sjcetpalai.ac.in">
+        <img src="/EXECOM/logo.svg" alt="" class="nav-logo" id="nav-logo" />
+      </a>
+      <i class="bx bx-menu header__toggle" id="header-toggle"></i>
 
-                    <div>
-                        <!-- <span class="nav__name">IEEEE</span>
-                  <span class="nav__name">Mitchell</span> -->
-                    </div>
-                </a>
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="https://ieee.sjcetpalai.ac.in/index.html" class="nav__link active main__nav">Home</a>
-                        </li>
-
-                        <li class="nav__item dropdown">
-                            <a href="#" class="nav__link dropdown__link main__nav">Societies <i
-                                    class="bx bx-chevron-down dropdown__icon"></i></a>
-
-                            <ul class="dropdown__menu">
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-CS/index.html" class="nav__link">IEEE
-                                        Computer
-                                        Society</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-PES/index.html" class="nav__link">IEEE
-                                        Power and Energy
-                                        Society</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-IAS/index.html" class="nav__link">IEEE
-                                        Industry
-                                        Applications
-                                        Society</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-RAS/index.html" class="nav__link">IEEE
-                                        Robotics and
-                                        Automation
-                                        Society</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-WIE/index.html" class="nav__link">IEEE
-                                        Women in
-                                        Engineering AG</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="https://ieee.sjcetpalai.ac.in/index.html#event_s" class="nav__link main__nav">Events</a>
-                        </li>
-
-                        <li class="nav__item dropdown">
-                            <a href="#" class="nav__link dropdown__link main__nav">IEEE &nbsp; Resources
-                                <i class="bx bx-chevron-down dropdown__icon"></i></a>
-
-                            <ul class="dropdown__menu">
-                                <li class="dropdown__item">
-                                    <a href="https://www.ieee.org/" target="_blank" class="nav__link">IEEE</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee-link.org/" target="_blank" class="nav__link">IEEE LINK</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://spectrum.ieee.org/" target="_blank" class="nav__link">IEEE
-                                        Spectrum</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieeextreme.org/" target="_blank" class="nav__link">IEEE Xtreme</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieeekerala.org/" target="_blank" class="nav__link">IEEE Kerala
-                                        Section</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav__item dropdown">
-                            <a href="#" class="nav__link dropdown__link main__nav">Execom <i
-                                    class="bx bx-chevron-down dropdown__icon"></i></a>
-
-                            <ul class="dropdown__menu">
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/EXECOM/2021/" class="nav__link">Execom 2021</a>
-                                    </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/EXECOM/2020/" class="nav__link">Execom
-                                        2020</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/EXECOM/2019/" class="nav__link">Execom 2019</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">Execom
-                                        2018</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="https://ieee.sjcetpalai.ac.in/blog/ras/robotics-in-the-future/" class="nav__link main__nav">Blog</a>
-                        </li>
-                    </ul>
-                </div>
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          <a href="" class="nav__perfil">
+            <div class="nav__img">
+              <img src="assets/img/perfil.jpg" alt="" />
             </div>
-        </nav>
-       
+
+            <div>
+              <!-- <span class="nav__name">IEEEE</span>
+                  <span class="nav__name">Mitchell</span> -->
+            </div>
+          </a>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  href="https://ieee.sjcetpalai.ac.in/index.html"
+                  class="nav__link active main__nav"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__link main__nav"
+                  >Societies <i class="bx bx-chevron-down dropdown__icon"></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-CS/index.html"
+                      class="nav__link"
+                      >IEEE Computer Society</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-PES/index.html"
+                      class="nav__link"
+                      >IEEE Power and Energy Society</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-IAS/index.html"
+                      class="nav__link"
+                      >IEEE Industry Applications Society</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-RAS/index.html"
+                      class="nav__link"
+                      >IEEE Robotics and Automation Society</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-WIE/index.html"
+                      class="nav__link"
+                      >IEEE Women in Engineering AG</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a
+                  href="https://ieee.sjcetpalai.ac.in/index.html#event_s"
+                  class="nav__link main__nav"
+                  >Events</a
+                >
+              </li>
+
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__link main__nav"
+                  >IEEE &nbsp; Resources
+                  <i class="bx bx-chevron-down dropdown__icon"></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a
+                      href="https://www.ieee.org/"
+                      target="_blank"
+                      class="nav__link"
+                      >IEEE</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee-link.org/"
+                      target="_blank"
+                      class="nav__link"
+                      >IEEE LINK</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://spectrum.ieee.org/"
+                      target="_blank"
+                      class="nav__link"
+                      >IEEE Spectrum</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieeextreme.org/"
+                      target="_blank"
+                      class="nav__link"
+                      >IEEE Xtreme</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieeekerala.org/"
+                      target="_blank"
+                      class="nav__link"
+                      >IEEE Kerala Section</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__link main__nav"
+                  >Execom <i class="bx bx-chevron-down dropdown__icon"></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/EXECOM/2022/"
+                      class="nav__link"
+                      >Execom 2022</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/EXECOM/2021/"
+                      class="nav__link"
+                      >Execom 2021</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/EXECOM/2020/"
+                      class="nav__link"
+                      >Execom 2020</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/EXECOM/2019/"
+                      class="nav__link"
+                      >Execom 2019</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Execom 2018</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a
+                  href="https://ieee.sjcetpalai.ac.in/blog/ras/robotics-in-the-future/"
+                  class="nav__link main__nav"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-       
-        
 
-       
     <section class="head_pad">
-        <h1 class="text-center py-5 head ">EXECOM 2018</h1>
-        <div class="card border-0">
-            <div class="card-body ">
+      <h1 class="text-center py-5 head">EXECOM 2018</h1>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center pt-4">CORE TEAM</h3>
 
-             <h3 class="text-center pt-4">CORE TEAM </h3>  
-
-        <div class="container my-5 ">
-            <div class="row ">
-               
-                   
-                    <div class="col-md-6 col-lg-4 mb-5 ">
-                        <div class="text-center cell p-3">
-                         <img src="/EXECOM/2018/pic2018/arun p.jpg" alt=""class="rounded-circle">
-                         <br>
-                         <h5 class="mt-2">Dr. Arun P<br> <p class="text-muted">Branch Counselor </p></h5>
-                         <a href="https://www.linkedin.com/in/arun-peethambaran-232a33150/?originalSubdomain=in" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                          
-                      </div>
-                     </div>
-
-                <div class="col-md-6 col-lg-4 mb-5 ">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2018/pic2018/akshay.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Akshay Ajith<br> <p class="text-muted"> Chairperson </p> </h5>
-                    <a href="https://www.linkedin.com/in/akshay-ajith-b73a7a72/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    
-                 </div>
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/arun p.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Dr. Arun P<br />
+                    <p class="text-muted">Branch Counselor</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/arun-peethambaran-232a33150/?originalSubdomain=in"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2018/pic2018/adorn.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Adorn Kurian<br> <p class="text-muted"> Vice Chairperson</p></h5>
-                    <a href="https://www.linkedin.com/in/adorn-k-06a25181/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                     
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/akshay.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Akshay Ajith<br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/akshay-ajith-b73a7a72/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
+              </div>
 
-                 <div class="col-md-6 col-lg-4 mb-5 ">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2018/pic2018/tessin.jpg" alt="" class="rounded-circle" >
-                    <br>
-                    <h5 class="mt-2">Tessin Treesa<br> <p class="text-muted">Secretary </p></h5>
-                    <a href="https://www.linkedin.com/in/tessin-treesa-b635a0158/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/adorn.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Adorn Kurian<br />
+                    <p class="text-muted">Vice Chairperson</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/adorn-k-06a25181/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                     <img src="/EXECOM/2018/pic2018/angitha.jpg" alt="" class="rounded-circle">
-                     <br>
-                     <h5 class="mt-2">Angitha Maria<br> <p class="text-muted">Joint Secretary</p></h5>
-                     <a href="https://www.linkedin.com/in/angitha-maria-mathew-641129169/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    
-                  </div>
-                 </div>
-               
-
-               
-
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2018/pic2018/poly.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Poly Ben Antony<br> <p class="text-muted">Treasurer</p></h5>
-                    <a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/tessin.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Tessin Treesa<br />
+                    <p class="text-muted">Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/tessin-treesa-b635a0158/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
+              </div>
 
-              
-                <div class="col-md-6 col-lg-4 mb-5 ">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2018/pic2018/shinu.jpg" alt=""class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Shinu Shaju<br> <p class="text-muted">Link Representative</p></h5>
-                    <a href="https://www.linkedin.com/in/shinushaju/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/angitha.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Angitha Maria<br />
+                    <p class="text-muted">Joint Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/angitha-maria-mathew-641129169/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2018/pic2018/akhil.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Akhil Francis<br> <p class="text-muted"> Program Coordinator</p></h5>
-                    <a href="https://www.linkedin.com/in/akhil-francis-628610112/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/poly.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Poly Ben Antony<br />
+                    <p class="text-muted">Treasurer</p>
+                  </h5>
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2018/pic2018/sanjo.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Sanjo Siby<br> <p class="text-muted">Technical Coordinator </p></h5>
-                    <a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                     
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/shinu.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Shinu Shaju<br />
+                    <p class="text-muted">Link Representative</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/shinushaju/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
+              </div>
 
-
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2018/pic2018/elsa.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Elsa Cherian<br> <p class="text-muted">EC Coordinator</p></h5>
-                    <a href="linkedin.com/in/elsa-cherian-76b890141/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/akhil.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Akhil Francis<br />
+                    <p class="text-muted">Program Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/akhil-francis-628610112/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                     <img src="/EXECOM/2018/pic2018/anna.jpg" alt="" class="rounded-circle">
-                     <br>
-                     <h5 class="mt-2">Anna Tomy<br> <p class="text-muted">MD Coordinator</p></h5>
-                     <a href="https://www.linkedin.com/in/anna-tomy-023910142/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                      
-                  </div>
-                 </div>
-
-                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2018/pic2018/vishnu2.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Vishnu K<br> <p class="text-muted">ATC</p></h5>
-                    <a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                     
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/sanjo.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Sanjo Siby<br />
+                    <p class="text-muted">Technical Coordinator</p>
+                  </h5>
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
+              </div>
 
-             </div>
-         </div>
-         </div>
-      </div> 
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/elsa.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Elsa Cherian<br />
+                    <p class="text-muted">EC Coordinator</p>
+                  </h5>
+                  <a
+                    href="linkedin.com/in/elsa-cherian-76b890141/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/anna.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Anna Tomy<br />
+                    <p class="text-muted">MD Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/anna-tomy-023910142/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/vishnu2.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Vishnu K<br />
+                    <p class="text-muted">ATC</p>
+                  </h5>
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    
-
-         <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mt-5 mb-5">COMPUTER SOCIETY</h3>
-                        <div class="container">
-                            <div class="row">
-                                
-                                <div class="col-md-6 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2018/pic2018/agin.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Agin Sebastian<br> <p class="text-muted"> Chairperson</p></h5>
-                                     <a href="https://www.linkedin.com/in/agin-sebastian-aba39511b/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                      
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2018/pic2018/joseph.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Joseph Sanchin<br> <p class="text-muted">Secretary </p></h5>
-                                     <a href="https://www.linkedin.com/in/joseph-sanchin-biju-sjcet-9b6273152/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                      
-                                  </div>
-                                 </div>
-
-                                 
-
-                            </div>
-                        </div>
-                    </div>
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mt-5 mb-5">COMPUTER SOCIETY</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/agin.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Agin Sebastian<br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/agin-sebastian-aba39511b/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
 
-
-           
-           
-
-
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5">INDUSTRY APPLICATION SOCIETY</h3>
-                        <div class="container">
-                            <div class="row">
-
-                                
-                                
-                                <div class="col-md-12 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2018/pic2018/dennis.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Dennis<br>  <p class="text-muted"> Chairperson </p></h5>
-                                     <a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                      
-                                  </div>
-                                 </div>
-
-                                
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-md-6 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/joseph.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Joseph Sanchin<br />
+                    <p class="text-muted">Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/joseph-sanchin-biju-sjcet-9b6273152/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5">POWER AND ENERGY SOCIETY</h3>
-                        <div class="container">
-                            <div class="row">
-
-                                <div class="col-md-6 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2018/pic2018/sanjo.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Sanjo Siby<br> <p class="text-muted"> Chairperson</p></h5>
-                                     <a href="https://www.linkedin.com/in" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2018/pic2018/sajan2.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Sajan Joseph<br> <p class="text-muted"> Secretary </p></h5>
-                                     <a href="linkedin.com/in/sajan-joseph-35331110a/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     
-                                  </div>
-                                 </div>
-
-                                
-
-                                 
-                            </div>
-                        </div>
-                    </div>
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">INDUSTRY APPLICATION SOCIETY</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/dennis.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Dennis<br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            
-
-            
-
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5">WOMEN IN ENGINEERING</h3>
-                        <div class="container">
-                            <div class="row">
-
-                                
-                                
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2018/pic2018/ashitha.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Ashitha Annu Andrews<br> <p class="text-muted"> Chairperson</p></h5>
-                                     <a href="linkedin.com/in/ashitha-andrews/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 col-lg-4 mb-5 ">
-                                    <div class="text-center cell p-3">
-                                    <img src="/EXECOM/2018/pic2018/ashna.jpg" alt="" class="rounded-circle" >
-                                    <br>
-                                    <h5 class="mt-2">Ashna Saji<br> <p class="text-muted"> Secretary </p></h5>
-                                    <a href="https://www.linkedin.com/in/ashna-saji-257a70184/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                    
-                                 </div>
-                                </div>
-                                 
-
-                                
-
-                                 <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2018/pic2018/jasmine.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Jasmine Joseph<br> <p class="text-muted"> Technical Secretary</p></h5>
-                                     <a href="https://www.linkedin.com/in/jasmine-joseph-9a9a34183/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 col-lg-12 mb-3">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2018/pic2018/alen.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Alen Raju<br> <p class="text-muted"> MD Coordinator</p></h5>
-                                     <a href="https://www.linkedin.com/in/alen-raju-9b3a51176/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                
-                                  </div>
-                                 </div>
-
-                            </div>
-                        </div>
-                    </div>
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">POWER AND ENERGY SOCIETY</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/sanjo.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Sanjo Siby<br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a href="https://www.linkedin.com/in" target="_blank">
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
 
-             <!-- Footer -->
+              <div class="col-md-6 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/sajan2.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Sajan Joseph<br />
+                    <p class="text-muted">Secretary</p>
+                  </h5>
+                  <a
+                    href="linkedin.com/in/sajan-joseph-35331110a/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">WOMEN IN ENGINEERING</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/ashitha.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Ashitha Annu Andrews<br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a href="linkedin.com/in/ashitha-andrews/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/ashna.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Ashna Saji<br />
+                    <p class="text-muted">Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/ashna-saji-257a70184/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/jasmine.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Jasmine Joseph<br />
+                    <p class="text-muted">Technical Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/jasmine-joseph-9a9a34183/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-12 mb-3">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2018/pic2018/alen.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Alen Raju<br />
+                    <p class="text-muted">MD Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/alen-raju-9b3a51176/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <section class="footer" data-aos="slide-up">
-        <div class="grid-wrapper">
-            <div class="col-4 footer1">
-                <a href="https://ieee.sjcetpalai.ac.in"> <img src="https://d33wubrfki0l68.cloudfront.net/06300c2955b939c441e8a7963d1bbc6bc79cd295/77e6b/images/logo.png"
-                    style="width: 200px" /> </a>
-                <!-- <p>Where Learning Starts</p> -->
-                <div class="Social Sites">
-                    <a href="https://www.facebook.com/ieeesbsjcet/" class="social_link" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="http://instagram.com/ieeesbsjcet/" class="social_link" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/ieeesbsjcet/" class="social_link" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.youtube.com/c/IEEESBSJCET/featured" class="social_link" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-                </div>
+      <div class="grid-wrapper">
+        <div class="col-4 footer1">
+          <a href="https://ieee.sjcetpalai.ac.in">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/06300c2955b939c441e8a7963d1bbc6bc79cd295/77e6b/images/logo.png"
+              style="width: 200px"
+            />
+          </a>
+          <!-- <p>Where Learning Starts</p> -->
+          <div class="Social Sites">
+            <a
+              href="https://www.facebook.com/ieeesbsjcet/"
+              class="social_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a
+              href="http://instagram.com/ieeesbsjcet/"
+              class="social_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/ieeesbsjcet/"
+              class="social_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/c/IEEESBSJCET/featured"
+              class="social_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-youtube"></i>
+            </a>
+          </div>
 
-                <!-- <h1>Contact Info</h1>
+          <!-- <h1>Contact Info</h1>
         <h4>St. Joseph's College of Engineering</h4>
         <h4>and Technology,</h4>
         <h4>Choondacherry, Palai</h4>
         <h4>Kerala, India</h4>
         <h4>+9173875638</h4>
         <h4>ieesbsjcet@gmail.com</h4> -->
-            </div>
-            <div class="col-4 footer2">
-                <h1>Links</h1>
-                <a href="https://ieee.sjcetpalai.ac.in/index.html" class="footer_link">Home</a>
-                <a href="https://ieee.sjcetpalai.ac.in/index.html#about_us" class="footer_link">About</a>
-                <a href="https://ieee.sjcetpalai.ac.in/index.html#event_s" class="footer_link">Events</a>
-                <a href="https://ieee.sjcetpalai.ac.in/EXECOM/2021/" class="footer_link">Execom</a>
-                <a href="https://ieee.sjcetpalai.ac.in/blog/ras/robotics-in-the-future/" class="footer_link">Blog</a>
-            </div>
-
-            <div class="col-4 footer4">
-                <h1>Societies</h1>
-                <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-CS/index.html" class="footer_link">IEEE Computer
-                    Society</a>
-                <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-PES/index.html" class="footer_link">IEEE Power and Energy
-                    Society</a>
-                <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-RAS/index.html" class="footer_link">IEEE Robotics and
-                    Automation
-                    Society</a>
-                <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-IAS/index.html" class="footer_link">IEEE Industry
-                    Applications
-                    Society</a>
-                <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-WIE/index.html" class="footer_link">IEEE Women in
-                    Engineering</a>
-            </div>
-
-            <div class="col-4 footer3">
-                <h1>IEEE Resources</h1>
-                <a href="https://www.ieee.org/" target="_blank" class="footer_link">IEEE</a>
-                <a href="https://ieee-link.org/" target="_blank" class="footer_link">IEEE LINK</a>
-                <a href="https://ieeekerala.org/" target="_blank" class="footer_link">IEEE Kerala Section</a>
-                <a href="https://spectrum.ieee.org/" target="_blank" class="footer_link">IEEE Spectrum</a>
-                <a href="https://ieeextreme.org/" target="_blank" class="footer_link">IEEE Xtreme</a>
-            </div>
         </div>
-        <hr />
-        <div class="copyright">
-            <p>Made with 💙 by IEEE SB SJCET</p>
+        <div class="col-4 footer2">
+          <h1>Links</h1>
+          <a href="https://ieee.sjcetpalai.ac.in/index.html" class="footer_link"
+            >Home</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/index.html#about_us"
+            class="footer_link"
+            >About</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/index.html#event_s"
+            class="footer_link"
+            >Events</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/EXECOM/2022/"
+            class="footer_link"
+            >Execom</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/blog/ras/robotics-in-the-future/"
+            class="footer_link"
+            >Blog</a
+          >
         </div>
+
+        <div class="col-4 footer4">
+          <h1>Societies</h1>
+          <a
+            href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-CS/index.html"
+            class="footer_link"
+            >IEEE Computer Society</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-PES/index.html"
+            class="footer_link"
+            >IEEE Power and Energy Society</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-RAS/index.html"
+            class="footer_link"
+            >IEEE Robotics and Automation Society</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-IAS/index.html"
+            class="footer_link"
+            >IEEE Industry Applications Society</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-WIE/index.html"
+            class="footer_link"
+            >IEEE Women in Engineering</a
+          >
+        </div>
+
+        <div class="col-4 footer3">
+          <h1>IEEE Resources</h1>
+          <a href="https://www.ieee.org/" target="_blank" class="footer_link"
+            >IEEE</a
+          >
+          <a href="https://ieee-link.org/" target="_blank" class="footer_link"
+            >IEEE LINK</a
+          >
+          <a href="https://ieeekerala.org/" target="_blank" class="footer_link"
+            >IEEE Kerala Section</a
+          >
+          <a
+            href="https://spectrum.ieee.org/"
+            target="_blank"
+            class="footer_link"
+            >IEEE Spectrum</a
+          >
+          <a href="https://ieeextreme.org/" target="_blank" class="footer_link"
+            >IEEE Xtreme</a
+          >
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>Made with 💙 by IEEE SB SJCET</p>
+      </div>
     </section>
 
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
 
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
-        
-                      
-    <script src="/EXECOM/navbar.js"></script> 
-                     <script src="https://kit.fontawesome.com/efc16ebc84.js" crossorigin="anonymous"></script>
-        </body>
+    <script src="/EXECOM/navbar.js"></script>
+    <script
+      src="https://kit.fontawesome.com/efc16ebc84.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

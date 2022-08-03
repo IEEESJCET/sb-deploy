@@ -1,811 +1,1496 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Execom2020</title>
 
-     <!--Favicon-->
-  <link rel="icon" href="/assets/icons/favicon.ico" type="image/gif" sizes="16x16">
+    <!--Favicon-->
+    <link
+      rel="icon"
+      href="/assets/icons/favicon.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
-<link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/EXECOM/navbar.css" />
     <link rel="stylesheet" href="/EXECOM/footer.css" />
-</head>
-<body>
-    
-    
-        <!-- Navbar -->
+  </head>
+  <body>
+    <!-- Navbar -->
     <header class="header">
-        <!-- <a href="#" class="header__logo">IEEE SB SJCET</a> -->
-    
-        <a href="https://ieee.sjcetpalai.ac.in">  <img src="/EXECOM/logo.svg" alt="" class="nav-logo" id="nav-logo" /> </a>   
-        <i class="bx bx-menu header__toggle" id="header-toggle"></i>
+      <!-- <a href="#" class="header__logo">IEEE SB SJCET</a> -->
 
-        <nav class="nav" id="nav-menu">                            
- 
-            <div class="nav__content bd-grid">
-                <a href="" class="nav__perfil">
-                    <div class="nav__img">
-                        <img src="assets/img/perfil.jpg" alt="" />               
-                    </div>
+      <a href="https://ieee.sjcetpalai.ac.in">
+        <img src="/EXECOM/logo.svg" alt="" class="nav-logo" id="nav-logo" />
+      </a>
+      <i class="bx bx-menu header__toggle" id="header-toggle"></i>
 
-                    <div>
-                        <!-- <span class="nav__name">IEEEE</span>
-                  <span class="nav__name">Mitchell</span> -->
-                    </div>
-                </a>
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="https://ieee.sjcetpalai.ac.in/index.html" class="nav__link active main__nav">Home</a>
-                        </li>
-
-                        <li class="nav__item dropdown">
-                            <a href="#" class="nav__link dropdown__link main__nav">Societies <i
-                                    class="bx bx-chevron-down dropdown__icon"></i></a>
-
-                            <ul class="dropdown__menu">
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-CS/index.html" class="nav__link">IEEE
-                                        Computer
-                                        Society</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-PES/index.html" class="nav__link">IEEE
-                                        Power and Energy
-                                        Society</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-IAS/index.html" class="nav__link">IEEE
-                                        Industry
-                                        Applications
-                                        Society</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-RAS/index.html" class="nav__link">IEEE
-                                        Robotics and
-                                        Automation
-                                        Society</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-WIE/index.html" class="nav__link">IEEE
-                                        Women in
-                                        Engineering AG</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="https://ieee.sjcetpalai.ac.in/index.html#event_s" class="nav__link main__nav">Events</a>
-                        </li>
-
-                        <li class="nav__item dropdown">
-                            <a href="#" class="nav__link dropdown__link main__nav">IEEE &nbsp; Resources
-                                <i class="bx bx-chevron-down dropdown__icon"></i></a>
-
-                            <ul class="dropdown__menu">
-                                <li class="dropdown__item">
-                                    <a href="https://www.ieee.org/" target="_blank" class="nav__link">IEEE</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee-link.org/" target="_blank" class="nav__link">IEEE LINK</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://spectrum.ieee.org/" target="_blank" class="nav__link">IEEE
-                                        Spectrum</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieeextreme.org/" target="_blank" class="nav__link">IEEE Xtreme</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieeekerala.org/" target="_blank" class="nav__link">IEEE Kerala
-                                        Section</a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="nav__item dropdown">
-                            <a href="#" class="nav__link dropdown__link main__nav">Execom <i
-                                    class="bx bx-chevron-down dropdown__icon"></i></a>
-
-                            <ul class="dropdown__menu">
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/EXECOM/2021/" class="nav__link">Execom 2021</a>
-                                    </li>
-                                <li class="dropdown__item">
-                                    <a href="#" class="nav__link">Execom
-                                        2020</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/EXECOM/2019/" class="nav__link">Execom 2019</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="https://ieee.sjcetpalai.ac.in/EXECOM/2018/" class="nav__link">Execom
-                                        2018</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="/blog/ras/robotics-in-the-future/" class="nav__link main__nav">Blog</a>
-                        </li>
-                    </ul>
-                </div>
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          <a href="" class="nav__perfil">
+            <div class="nav__img">
+              <img src="assets/img/perfil.jpg" alt="" />
             </div>
-        </nav>
-       
+
+            <div>
+              <!-- <span class="nav__name">IEEEE</span>
+                  <span class="nav__name">Mitchell</span> -->
+            </div>
+          </a>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  href="https://ieee.sjcetpalai.ac.in/index.html"
+                  class="nav__link active main__nav"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__link main__nav"
+                  >Societies <i class="bx bx-chevron-down dropdown__icon"></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-CS/index.html"
+                      class="nav__link"
+                      >IEEE Computer Society</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-PES/index.html"
+                      class="nav__link"
+                      >IEEE Power and Energy Society</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-IAS/index.html"
+                      class="nav__link"
+                      >IEEE Industry Applications Society</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-RAS/index.html"
+                      class="nav__link"
+                      >IEEE Robotics and Automation Society</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-WIE/index.html"
+                      class="nav__link"
+                      >IEEE Women in Engineering AG</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a
+                  href="https://ieee.sjcetpalai.ac.in/index.html#event_s"
+                  class="nav__link main__nav"
+                  >Events</a
+                >
+              </li>
+
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__link main__nav"
+                  >IEEE &nbsp; Resources
+                  <i class="bx bx-chevron-down dropdown__icon"></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a
+                      href="https://www.ieee.org/"
+                      target="_blank"
+                      class="nav__link"
+                      >IEEE</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee-link.org/"
+                      target="_blank"
+                      class="nav__link"
+                      >IEEE LINK</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://spectrum.ieee.org/"
+                      target="_blank"
+                      class="nav__link"
+                      >IEEE Spectrum</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieeextreme.org/"
+                      target="_blank"
+                      class="nav__link"
+                      >IEEE Xtreme</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieeekerala.org/"
+                      target="_blank"
+                      class="nav__link"
+                      >IEEE Kerala Section</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__link main__nav"
+                  >Execom <i class="bx bx-chevron-down dropdown__icon"></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/EXECOM/2022/"
+                      class="nav__link"
+                      >Execom 2022</a
+                    >
+                  </li>
+
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/EXECOM/2021/"
+                      class="nav__link"
+                      >Execom 2021</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Execom 2020</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/EXECOM/2019/"
+                      class="nav__link"
+                      >Execom 2019</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      href="https://ieee.sjcetpalai.ac.in/EXECOM/2018/"
+                      class="nav__link"
+                      >Execom 2018</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a
+                  href="/blog/ras/robotics-in-the-future/"
+                  class="nav__link main__nav"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-       
+
     <section class="head_pad">
-        <h1 class="text-center p-5 top">EXECOM 2020</h1>
-        <div class="card border-0">
-            <div class="card-body ">
+      <h1 class="text-center p-5 top">EXECOM 2020</h1>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center pt-4">CORE TEAM</h3>
 
-             <h3 class="text-center pt-4">CORE TEAM </h3>  
-
-        <div class="container my-5 ">
-            <div class="row ">
-               
-                   
-                    <div class="col-md-6 col-lg-4 mb-5 ">
-                        <div class="text-center cell p-3">
-                         <img src="/EXECOM/2020/pic/Dr. Arun P.jpg" alt=""class="rounded-circle">
-                         <br>
-                         <h5 class="mt-2">Dr. Arun P<br> <p class="text-muted">Branch Counselor </p></h5>
-                         <a href="https://www.linkedin.com/in/arun-peethambaran-232a33150/?originalSubdomain=in" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                         <a href="mailto:arun@sjcetpalai.ac.in" target="_blank"><i class="fas fa-envelope"></i></a> 
-                      </div>
-                     </div>
-
-                <div class="col-md-6 col-lg-4 mb-5 ">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2020/pic/Jen K Jennings.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Jen K Jennings<br> <p class="text-muted"> Chairperson </p> </h5>
-                    <a href="https://www.linkedin.com/in/jen-k-jennings-53904a18b/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:jenkjennings@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                 </div>
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Dr. Arun P.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Dr. Arun P<br />
+                    <p class="text-muted">Branch Counselor</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/arun-peethambaran-232a33150/?originalSubdomain=in"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:arun@sjcetpalai.ac.in" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2020/pic/Tinu Sam.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Tinu Sam<br> <p class="text-muted"> Vice Chairperson</p></h5>
-                    <a href="https://www.linkedin.com/in/tinu-sam-074170186" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:tinusam27@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Jen K Jennings.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Jen K Jennings<br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/jen-k-jennings-53904a18b/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:jenkjennings@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
+              </div>
 
-                 <div class="col-md-6 col-lg-4 mb-5 ">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2020/pic/Treesa Mary.jpg" alt="" class="rounded-circle" >
-                    <br>
-                    <h5 class="mt-2">Treesa Mary Joseph<br> <p class="text-muted">Secretary </p></h5>
-                    <a href="https://www.linkedin.com/in/treesa-mary-joseph-a78641190" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:treesamaryjoseph@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Tinu Sam.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Tinu Sam<br />
+                    <p class="text-muted">Vice Chairperson</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/tinu-sam-074170186"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:tinusam27@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                     <img src="/EXECOM/2020/pic/Nivedita PM.jpg" alt="" class="rounded-circle">
-                     <br>
-                     <h5 class="mt-2"> Niveditha P M<br> <p class="text-muted">Joint Secretary</p></h5>
-                     <a href="https://www.linkedin.com/in/niveditha-p-m-907b8218b" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                     <a href="mailto:niveditha@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                  </div>
-                 </div>
-               
-
-               
-
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2020/pic/Shinu Shaji.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Shinu Shaju<br> <p class="text-muted">Treasurer</p></h5>
-                    <a href="https://www.linkedin.com/in/shinushaju/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:shinushaju@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Treesa Mary.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Treesa Mary Joseph<br />
+                    <p class="text-muted">Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/treesa-mary-joseph-a78641190"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:treesamaryjoseph@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
+              </div>
 
-              
-                <div class="col-md-6 col-lg-4 mb-5 ">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2020/pic/Krishna Prabha.jpg" alt=""class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Krishna Prabha S<br> <p class="text-muted">Link Representative</p></h5>
-                    <a href="https://www.linkedin.com/in/krishna-prabha-s-b73ba7195/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:krishnaprabhas@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Nivedita PM.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Niveditha P M<br />
+                    <p class="text-muted">Joint Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/niveditha-p-m-907b8218b"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:niveditha@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2020/pic/Roop Saji.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Roop Saji<br> <p class="text-muted"> Program Coordinator</p></h5>
-                    <a href="https://www.linkedin.com/in/roop-saji-b80b31172" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:roopsaji4@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Shinu Shaji.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Shinu Shaju<br />
+                    <p class="text-muted">Treasurer</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/shinushaju/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:shinushaju@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2020/pic/Romal Roy.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Romal Roy <br> <p class="text-muted">Technical Coordinator </p></h5>
-                    <a href="https://www.linkedin.com/in/romal-roy-825a7614b/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:romalroy@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Krishna Prabha.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Krishna Prabha S<br />
+                    <p class="text-muted">Link Representative</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/krishna-prabha-s-b73ba7195/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:krishnaprabhas@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-12 mb-5">
-                    <div class="text-center cell p-3">
-                    <img src="/EXECOM/2020/pic/Rosa Mariam.jpg" alt="" class="rounded-circle">
-                    <br>
-                    <h5 class="mt-2">Rosa Mariam John<br> <p class="text-muted">EC Coordinator</p></h5>
-                    <a href="https://www.linkedin.com/in/rosamjohn/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:rosamariamjohn18@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                 </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Roop Saji.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Roop Saji<br />
+                    <p class="text-muted">Program Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/roop-saji-b80b31172"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:roopsaji4@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
-             </div>
-         </div>
-         </div>
-      </div> 
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Romal Roy.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Romal Roy <br />
+                    <p class="text-muted">Technical Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/romal-roy-825a7614b/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:romalroy@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-12 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Rosa Mariam.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Rosa Mariam John<br />
+                    <p class="text-muted">EC Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/rosamjohn/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:rosamariamjohn18@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    
-
-         <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mt-5 mb-5">COMPUTER SOCIETY</h3>
-                        <div class="container">
-                            <div class="row">
-
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Prof. Sarju S.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Prof. Sarju S <br> <p class="text-muted"> Chapter Advisor</p></h5>
-                                     <a href="https://www.linkedin.com/in/sarju-s/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:sarju.s@sjcetpalai.ac.in" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-                                
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Justin Johny.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Justin Johny Mathew <br> <p class="text-muted"> Chairperson</p></h5>
-                                     <a href="https://www.linkedin.com/in/justinjohnymathew" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:justinjohny@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Mishell Mariya.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Mishell Mariya Joseph<br> <p class="text-muted">Secretary </p></h5>
-                                     <a href="https://www.linkedin.com/in/mishell-mariya-joseph-227290174" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:mishelljoseph@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 col-lg-12 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Anjana VM.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Anjana V M<br> <p class="text-muted"> Technical Coordinator </p></h5>
-                                     <a href="https://www.linkedin.com/in/anjana-vm-528aa81a0" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:anjanavm2000@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                            </div>
-                        </div>
-                    </div>
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mt-5 mb-5">COMPUTER SOCIETY</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Prof. Sarju S.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Prof. Sarju S <br />
+                    <p class="text-muted">Chapter Advisor</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/sarju-s/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:sarju.s@sjcetpalai.ac.in" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
 
-
-           
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5 ">ROBOTICS AND AUTOMATION SOCIETY</h3>
-                        <div class="container">
-                            <div class="row">
-
-                                <div class="col-md-6 col-lg-4 mb-5 ">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Dr. Arun P.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Dr. Arun P<br> <p class="text-muted">Chapter Advisor </p></h5>
-                                     <a href="https://www.linkedin.com/in/arun-peethambaran-232a33150/?originalSubdomain=in" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:arun@sjcetpalai.ac.in  " target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-                                
-                                <div class="col-md-6 col-lg-4 mb-5 ">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Nishanth Benny.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Nishanth Benny<br> <p class="text-muted">Chairperson </p></h5>
-                                     <a href="https://www.linkedin.com/in/nishanthbenny/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:nishanthbenny@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Rona Mariam Shaji.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Rona Mariam Shaji<br> <p class="text-muted">Secretary</p></h5>
-                                     <a href="https://www.linkedin.com/in/rona-mariam-shaji-144171186" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:ronashaji@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Jachin Thomas.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Jachin Bency Thomas<br> <p class="text-muted">Technical Coordinator</p></h5>
-                                     <a href="https://www.linkedin.com/in/jachinbency/?originalSubdomain=in" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:jachinbency@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-12 col-lg-6 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Thomas M John.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Thomas M John<br> <p class="text-muted"> Robotics Activity Coordinator</p></h5>
-                                     <a href="https://www.linkedin.com/in/thomas-m-john-0667751a6/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:thomasmjohn10@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 
-
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Justin Johny.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Justin Johny Mathew <br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/justinjohnymathew"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:justinjohny@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
 
-
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5">INDUSTRY APPLICATION SOCIETY</h3>
-                        <div class="container">
-                            <div class="row">
-
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Prof. Jojin T.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Prof.Jojin Thomas <br> <p class="text-muted">Chapter Advisor</p></h5>
-                                     <a href="https://www.linkedin.com/in/jojin-thomas-72911bb2/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:jojinthomas@sjcetpalai.ac.in" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-                                
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Arsha Roy.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Arsha Roy<br>  <p class="text-muted"> Chairperson </p></h5>
-                                     <a href="https://www.linkedin.com/in/arsha-roy-63940a177/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:arsha_roy@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Mintu Mary .jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Mintu Mary Saju<br> <p class="text-muted">Secretary</p></h5>
-                                     <a href="https://www.linkedin.com/in/mintu-mary-saju-2992381a9/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:mintumarysaju@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 col-lg-12 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Abhiraj M S.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Abhiraj M S<br>  <p class="text-muted">Technical Coordinator</p></h5>
-                                     <a href="https://www.linkedin.com/in/abhiraj-ms-6b51a1178/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:abhirajms001@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 
-
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Mishell Mariya.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Mishell Mariya Joseph<br />
+                    <p class="text-muted">Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/mishell-mariya-joseph-227290174"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:mishelljoseph@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
 
-
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5">POWER AND ENERGY SOCIETY</h3>
-                        <div class="container">
-                            <div class="row">
-
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Prof. Jojin T.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Prof.Jojin Thomas <br> <p class="text-muted">Chapter Advisor</p></h5>
-                                     <a href="https://www.linkedin.com/in/jojin-thomas-72911bb2/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:jojinthomas@sjcetpalai.ac.in" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-                                
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Albin Thomas.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Albin Thomas<br> <p class="text-muted"> Chairperson</p></h5>
-                                     <a href="https://www.linkedin.com/in/albin-thomas-a87161176" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:albinthomas@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Hanna Susan.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Hanna Susan Mathew<br> <p class="text-muted"> Secretary </p></h5>
-                                     <a href="https://www.linkedin.com/in/hanna-susan-mathew-20b032194" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:hannamathew@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 col-lg-12  mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Samrat Pradeep.jpg" alt=""class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Samrat Pradeep<br> <p class="text-muted">Technical Coordinator</p></h5>
-                                     <a href="https://www.linkedin.com/in/samrat-pradeep-3b474a1a6/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:sampradeep@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-md-6 col-lg-12 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Anjana VM.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Anjana V M<br />
+                    <p class="text-muted">Technical Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/anjana-vm-528aa81a0"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:anjanavm2000@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            
-
-            
-
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5">WOMEN IN ENGINEERING</h3>
-                        <div class="container">
-                            <div class="row">
-
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Prof. Nitha M.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Prof. Nitha M Biju<br> <p class="text-muted">Affinity Group Advisor</p></h5>
-                                     
-                                     <a href="mailto:nitha@sjcetpalai.ac.in" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-                                
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Hanna Reni George.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Hanna  Reni George<br> <p class="text-muted"> Chairperson</p></h5>
-                                     <a href="https://www.linkedin.com/in/hanna-reni-948b61193/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:hannaelsa28@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                                 <div class="col-md-6 col-lg-4 mb-5 ">
-                                    <div class="text-center cell p-3">
-                                    <img src="/EXECOM/2020/pic/Dona S.jpg" alt="" class="rounded-circle" >
-                                    <br>
-                                    <h5 class="mt-2">Dona S Plavelil<br> <p class="text-muted"> Secretary </p></h5>
-                                    <a href="https://www.linkedin.com/in/dona-s-00a692130" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                    <a href="mailto:donasplavelil16@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                 </div>
-                                </div>
-                                 
-
-                                
-
-                                 <div class="col-md-6 col-lg-12 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Ann Susan George.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Ann Susan George<br> <p class="text-muted"> Technical Coordinator</p></h5>
-                                     <a href="https://www.linkedin.com/in/ann-susan-george-b376501a5/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:anngeorgesusan@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-
-                            </div>
-                        </div>
-                    </div>
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">ROBOTICS AND AUTOMATION SOCIETY</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Dr. Arun P.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Dr. Arun P<br />
+                    <p class="text-muted">Chapter Advisor</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/arun-peethambaran-232a33150/?originalSubdomain=in"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:arun@sjcetpalai.ac.in  " target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
-            </section>
-            
+              </div>
 
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5">MEMBERSHIP DEVELOPMENT TEAM</h3>
-                        <div class="container">
-                            <div class="row">
-                                
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Gokul G.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Gokul G Krishnan<br> <p class="text-muted">MD Team Lead </p></h5>
-                                     <a href="https://www.linkedin.com/in/gokul-g-krishnan" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:gokul2000@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-        
-                                 <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Rinnu Georgy.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Rinnu Gregory<br> <p class="text-muted"> MD Coordinator</p></h5>
-                                     <a href="https://www.linkedin.com/in/rinnu-gregory-8399051a8/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:rinnugregory@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-        
-                                 <div class="col-md-12 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Shema Elizabeth.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Shema Elizabeth <br> <p class="text-muted"> MD Coordinator</p></h5>
-                                     <a href="https://www.linkedin.com/in/shema-elizabeth-abraham-37a7361a9/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:shemaseakt@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-                                </div>
-                        </div>
-                    </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Nishanth Benny.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Nishanth Benny<br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/nishanthbenny/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:nishanthbenny@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
-            </section>
-        
+              </div>
 
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5 ">DOCUMENTATION TEAM</h3>
-                        <div class="container">
-                            <div class="row">
-        
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                    <img src="/EXECOM/2020/pic/Diya Jose.jpg" alt="" class="rounded-circle">
-                                    <br>
-                                    <h5 class="mt-2">Diya Jose<br> <p class="text-muted"> Content Writer</p></h5>
-                                    <a href="https://www.linkedin.com/in/diya-jose-13b603144" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                    <a href="mailto:diyajose770@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                 </div>
-                                </div>
-                    
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                    <img src="/EXECOM/2020/pic/Elizabeth Teena Lalu.jpg" alt="" class="rounded-circle">
-                                    <br>
-                                    <h5 class="mt-2">Elizabeth  Teena Lalu<br> <p class="text-muted"> Content Writer</p></h5>
-                                    
-                                    <a href="mailto:elizabeth.teena.lalu@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                 </div>
-                                </div>
-                    
-                                <div class="col-md-12 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                    <img src="/EXECOM/2020/pic/Jilna C V.jpg" alt="" class="rounded-circle">
-                                    <br>
-                                    <h5 class="mt-2">Jilna Maria C V<br> <p class="text-muted"> Content Writer</p></h5>
-                                    <a href="https://www.linkedin.com/in/jilna-maria-c-v-40a6ba188/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                    <a href="mailto:jilnamaria@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                 </div>
-                                </div>     
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Rona Mariam Shaji.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Rona Mariam Shaji<br />
+                    <p class="text-muted">Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/rona-mariam-shaji-144171186"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:ronashaji@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
-            </section>
-        
-            
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5 ">DESIGN TEAM</h3>
-                        <div class="container">
-                            <div class="row">
-        
-                                <div class="col-md-6 mb-5">
-                                    <div class="text-center cell p-3">
-                                    <img src="/EXECOM/2020/pic/Santhosh Thomas.jpg" alt="" class="rounded-circle">
-                                    <br>
-                                    <h5 class="mt-2">Santhosh Thomas<br> <p class="text-muted"> Design Lead</p></h5>
-                                    <a href="https://www.linkedin.com/in/santhoshthomas268842/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                    <a href="mailto:santhoshthomas015@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                 </div>
-                                </div>
-                            
-                                  <div class="col-md-6 mb-5">
-                                <div class="text-center cell p-3">
-                                <img src="/EXECOM/2020/pic/Anit D K.jpg" alt="" class="rounded-circle">
-                                <br>
-                                <h5 class="mt-2">Anit D K<br> <p class="text-muted"> Designer</p></h5>
-                                <a href="https://www.linkedin.com/in/anit-devesiya-kuttikade-546886193/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                <a href="mailto:adevesiya@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                             </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        
+              </div>
 
-            <section>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h3 class="text-center mb-5 mt-5">WEB TEAM</h3>
-                        <div class="container">
-                            <div class="row">
-                                
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/rithja.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Rithin Jose<br> <p class="text-muted"> Web Lead</p></h5>
-                                     <a href="https://www.linkedin.com/in/rithinja/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:rithinja@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-        
-                                 <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Rajat M.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Rajat Mathew <br> <p class="text-muted">Web Master</p></h5>
-                                     <a href="https://www.linkedin.com/in/rajatmathew/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:rajatmathew@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-        
-                                 <div class="col-md-12 col-lg-4 mb-5">
-                                    <div class="text-center cell p-3">
-                                     <img src="/EXECOM/2020/pic/Anitta Emmanuel.jpg" alt="" class="rounded-circle">
-                                     <br>
-                                     <h5 class="mt-2">Anitta Emmanuel<br> <p class="text-muted">Web Master</p></h5>
-                                     <a href="https://www.linkedin.com/in/anitta-emmanuel-60417b194" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                                     <a href="mailto:anittaemmanuel@ieee.org" target="_blank"><i class="fas fa-envelope"></i></a> 
-                                  </div>
-                                 </div>
-        
-                                 
-                                </div>
-                        </div>
-                    </div>
+              <div class="col-md-6 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Jachin Thomas.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Jachin Bency Thomas<br />
+                    <p class="text-muted">Technical Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/jachinbency/?originalSubdomain=in"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:jachinbency@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
 
-             <!-- Footer -->
+              <div class="col-md-12 col-lg-6 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Thomas M John.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Thomas M John<br />
+                    <p class="text-muted">Robotics Activity Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/thomas-m-john-0667751a6/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:thomasmjohn10@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">INDUSTRY APPLICATION SOCIETY</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Prof. Jojin T.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Prof.Jojin Thomas <br />
+                    <p class="text-muted">Chapter Advisor</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/jojin-thomas-72911bb2/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:jojinthomas@sjcetpalai.ac.in" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Arsha Roy.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Arsha Roy<br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/arsha-roy-63940a177/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:arsha_roy@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Mintu Mary .jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Mintu Mary Saju<br />
+                    <p class="text-muted">Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/mintu-mary-saju-2992381a9/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:mintumarysaju@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-12 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Abhiraj M S.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Abhiraj M S<br />
+                    <p class="text-muted">Technical Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/abhiraj-ms-6b51a1178/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:abhirajms001@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">POWER AND ENERGY SOCIETY</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Prof. Jojin T.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Prof.Jojin Thomas <br />
+                    <p class="text-muted">Chapter Advisor</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/jojin-thomas-72911bb2/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:jojinthomas@sjcetpalai.ac.in" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Albin Thomas.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Albin Thomas<br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/albin-thomas-a87161176"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:albinthomas@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Hanna Susan.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Hanna Susan Mathew<br />
+                    <p class="text-muted">Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/hanna-susan-mathew-20b032194"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:hannamathew@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-12 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Samrat Pradeep.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Samrat Pradeep<br />
+                    <p class="text-muted">Technical Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/samrat-pradeep-3b474a1a6/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:sampradeep@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">WOMEN IN ENGINEERING</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Prof. Nitha M.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Prof. Nitha M Biju<br />
+                    <p class="text-muted">Affinity Group Advisor</p>
+                  </h5>
+
+                  <a href="mailto:nitha@sjcetpalai.ac.in" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Hanna Reni George.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Hanna Reni George<br />
+                    <p class="text-muted">Chairperson</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/hanna-reni-948b61193/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:hannaelsa28@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Dona S.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Dona S Plavelil<br />
+                    <p class="text-muted">Secretary</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/dona-s-00a692130"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:donasplavelil16@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-12 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Ann Susan George.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Ann Susan George<br />
+                    <p class="text-muted">Technical Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/ann-susan-george-b376501a5/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:anngeorgesusan@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">MEMBERSHIP DEVELOPMENT TEAM</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Gokul G.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Gokul G Krishnan<br />
+                    <p class="text-muted">MD Team Lead</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/gokul-g-krishnan"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:gokul2000@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Rinnu Georgy.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Rinnu Gregory<br />
+                    <p class="text-muted">MD Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/rinnu-gregory-8399051a8/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:rinnugregory@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Shema Elizabeth.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Shema Elizabeth <br />
+                    <p class="text-muted">MD Coordinator</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/shema-elizabeth-abraham-37a7361a9/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:shemaseakt@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">DOCUMENTATION TEAM</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Diya Jose.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Diya Jose<br />
+                    <p class="text-muted">Content Writer</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/diya-jose-13b603144"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:diyajose770@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Elizabeth Teena Lalu.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Elizabeth Teena Lalu<br />
+                    <p class="text-muted">Content Writer</p>
+                  </h5>
+
+                  <a href="mailto:elizabeth.teena.lalu@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Jilna C V.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Jilna Maria C V<br />
+                    <p class="text-muted">Content Writer</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/jilna-maria-c-v-40a6ba188/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:jilnamaria@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">DESIGN TEAM</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Santhosh Thomas.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Santhosh Thomas<br />
+                    <p class="text-muted">Design Lead</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/santhoshthomas268842/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:santhoshthomas015@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Anit D K.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Anit D K<br />
+                    <p class="text-muted">Designer</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/anit-devesiya-kuttikade-546886193/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:adevesiya@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card border-0">
+        <div class="card-body">
+          <h3 class="text-center mb-5 mt-5">WEB TEAM</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/rithja.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Rithin Jose<br />
+                    <p class="text-muted">Web Lead</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/rithinja/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:rithinja@gmail.com" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Rajat M.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Rajat Mathew <br />
+                    <p class="text-muted">Web Master</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/rajatmathew/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:rajatmathew@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-lg-4 mb-5">
+                <div class="text-center cell p-3">
+                  <img
+                    src="/EXECOM/2020/pic/Anitta Emmanuel.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <br />
+                  <h5 class="mt-2">
+                    Anitta Emmanuel<br />
+                    <p class="text-muted">Web Master</p>
+                  </h5>
+                  <a
+                    href="https://www.linkedin.com/in/anitta-emmanuel-60417b194"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:anittaemmanuel@ieee.org" target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <section class="footer" data-aos="slide-up">
-        <div class="grid-wrapper">
-            <div class="col-4 footer1">
-                <a href="https://ieee.sjcetpalai.ac.in"> <img src="https://d33wubrfki0l68.cloudfront.net/06300c2955b939c441e8a7963d1bbc6bc79cd295/77e6b/images/logo.png"
-                    style="width: 200px" /> </a>
-                <!-- <p>Where Learning Starts</p> -->
-                <div class="Social Sites">
-                    <a href="https://www.facebook.com/ieeesbsjcet/" class="social_link" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="http://instagram.com/ieeesbsjcet/" class="social_link" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/ieeesbsjcet/" class="social_link" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.youtube.com/c/IEEESBSJCET/featured" class="social_link" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-                </div>
+      <div class="grid-wrapper">
+        <div class="col-4 footer1">
+          <a href="https://ieee.sjcetpalai.ac.in">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/06300c2955b939c441e8a7963d1bbc6bc79cd295/77e6b/images/logo.png"
+              style="width: 200px"
+            />
+          </a>
+          <!-- <p>Where Learning Starts</p> -->
+          <div class="Social Sites">
+            <a
+              href="https://www.facebook.com/ieeesbsjcet/"
+              class="social_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a
+              href="http://instagram.com/ieeesbsjcet/"
+              class="social_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/ieeesbsjcet/"
+              class="social_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/c/IEEESBSJCET/featured"
+              class="social_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-youtube"></i>
+            </a>
+          </div>
 
-                <!-- <h1>Contact Info</h1>
+          <!-- <h1>Contact Info</h1>
         <h4>St. Joseph's College of Engineering</h4>
         <h4>and Technology,</h4>
         <h4>Choondacherry, Palai</h4>
         <h4>Kerala, India</h4>
         <h4>+9173875638</h4>
         <h4>ieesbsjcet@gmail.com</h4> -->
-            </div>
-            <div class="col-4 footer2">
-                <h1>Links</h1>
-                <a href="https://ieee.sjcetpalai.ac.in/index.html" class="footer_link">Home</a>
-                <a href="https://ieee.sjcetpalai.ac.in/index.html#about_us" class="footer_link">About</a>
-                <a href="https://ieee.sjcetpalai.ac.in/index.html#event_s" class="footer_link">Events</a>
-                <a href="https://ieee.sjcetpalai.ac.in/EXECOM/2021/" class="footer_link">Execom</a>
-                <a href="https://ieee.sjcetpalai.ac.in/blog/ras/robotics-in-the-future/" class="footer_link">Blog</a>
-            </div>
-
-            <div class="col-4 footer4">
-                <h1>Societies</h1>
-                <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-CS/index.html" class="footer_link">IEEE Computer
-                    Society</a>
-                <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-PES/index.html" class="footer_link">IEEE Power and Energy
-                    Society</a>
-                <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-RAS/index.html" class="footer_link">IEEE Robotics and
-                    Automation
-                    Society</a>
-                <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-IAS/index.html" class="footer_link">IEEE Industry
-                    Applications
-                    Society</a>
-                <a href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-WIE/index.html" class="footer_link">IEEE Women in
-                    Engineering</a>
-            </div>
-
-            <div class="col-4 footer3">
-                <h1>IEEE Resources</h1>
-                <a href="https://www.ieee.org/" target="_blank" class="footer_link">IEEE</a>
-                <a href="https://ieee-link.org/" target="_blank" class="footer_link">IEEE LINK</a>
-                <a href="https://ieeekerala.org/" target="_blank" class="footer_link">IEEE Kerala Section</a>
-                <a href="https://spectrum.ieee.org/" target="_blank" class="footer_link">IEEE Spectrum</a>
-                <a href="https://ieeextreme.org/" target="_blank" class="footer_link">IEEE Xtreme</a>
-            </div>
         </div>
-        <hr />
-        <div class="copyright">
-            <p>Made with 💙 by IEEE SB SJCET</p>
+        <div class="col-4 footer2">
+          <h1>Links</h1>
+          <a href="https://ieee.sjcetpalai.ac.in/index.html" class="footer_link"
+            >Home</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/index.html#about_us"
+            class="footer_link"
+            >About</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/index.html#event_s"
+            class="footer_link"
+            >Events</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/EXECOM/2022/"
+            class="footer_link"
+            >Execom</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/blog/ras/robotics-in-the-future/"
+            class="footer_link"
+            >Blog</a
+          >
         </div>
+
+        <div class="col-4 footer4">
+          <h1>Societies</h1>
+          <a
+            href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-CS/index.html"
+            class="footer_link"
+            >IEEE Computer Society</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-PES/index.html"
+            class="footer_link"
+            >IEEE Power and Energy Society</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-RAS/index.html"
+            class="footer_link"
+            >IEEE Robotics and Automation Society</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-IAS/index.html"
+            class="footer_link"
+            >IEEE Industry Applications Society</a
+          >
+          <a
+            href="https://ieee.sjcetpalai.ac.in/Societies/IEEE-WIE/index.html"
+            class="footer_link"
+            >IEEE Women in Engineering</a
+          >
+        </div>
+
+        <div class="col-4 footer3">
+          <h1>IEEE Resources</h1>
+          <a href="https://www.ieee.org/" target="_blank" class="footer_link"
+            >IEEE</a
+          >
+          <a href="https://ieee-link.org/" target="_blank" class="footer_link"
+            >IEEE LINK</a
+          >
+          <a href="https://ieeekerala.org/" target="_blank" class="footer_link"
+            >IEEE Kerala Section</a
+          >
+          <a
+            href="https://spectrum.ieee.org/"
+            target="_blank"
+            class="footer_link"
+            >IEEE Spectrum</a
+          >
+          <a href="https://ieeextreme.org/" target="_blank" class="footer_link"
+            >IEEE Xtreme</a
+          >
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>Made with 💙 by IEEE SB SJCET</p>
+      </div>
     </section>
 
-    <script src="https://kit.fontawesome.com/0ef65df47b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0ef65df47b.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="/EXECOM/navbar.js"></script>
-                 <script src="https://kit.fontawesome.com/efc16ebc84.js" crossorigin="anonymous"></script>
-        </body>
+    <script
+      src="https://kit.fontawesome.com/efc16ebc84.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
