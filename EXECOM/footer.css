@@ -1,7 +1,7 @@
 /*===== CUSTOM FONTS =====*/
 @font-face {
   font-family: "plusjakarta";
-  src: url(/IEEE/sb-deploy/assets/fonts/Jakarta/PlusJakartaSans-Light.woff2);
+  src: url(/assets/fonts/Jakarta/PlusJakartaSans-Light.woff2);
 }
 
 .footer * {
