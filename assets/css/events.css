@@ -1,4 +1,115 @@
-/* Basic styles */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.poster-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px;
+}
+
+@media (max-width: 1024px) {
+  .poster-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .poster-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .poster-container {
+    justify-content: center;
+  }
+}
+
+/* Poster styles */
+.poster {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 300px;
+  height: 300px;
+}
+
+.poster:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.poster .content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Poster card styles */
+.poster-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.poster-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.rounded-lg {
+  border-radius: 1rem !important;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+  
+  .carousel-inner .carousel-item-left.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+transform: translateX(0);
+}
+
+/* 
 
 *,
 *::after,
@@ -31,7 +142,7 @@
     "sidebar content-2 content-3";
 }
 
-/* Setting up the grid */
+
 .sidebar {
   grid-area: sidebar;
   padding-left: 20px;
@@ -67,7 +178,7 @@ a.register {
   border-radius: 0px;
 }
 
-/*  individual card item */
+
 .item {
   background-color: #fff;
   color: #fff;
@@ -83,7 +194,7 @@ a.register {
   transition: 0.5s;
 }
 
-/* Images and gradients */
+
 .content-1 {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.733)),
     url(../images/events/e1.jpg);
@@ -114,7 +225,7 @@ a.register {
   position: relative;
 }
 
-/* Text content */
+
 .item p {
   position: absolute;
   bottom: 30px;
@@ -132,7 +243,7 @@ a.register {
   bottom: 20px;
 }
 
-/* Pointer icon */
+
 .item::after {
   content: url(../icons/slanted-arrow.svg);
 
@@ -201,11 +312,8 @@ a.register {
 .date {
   font-size: 1.2rem !important;
   display: block;
-  /* position: absolute; */
-  /* top: 10px;
-  right: 10px; */
   color: rgb(194, 194, 194);
   letter-spacing: -1px;
   font-family: Inconsolata;
   max-width: 100%;
-}
+} */
