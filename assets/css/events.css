@@ -58,6 +58,18 @@
   background-position: center;
 }
 
+#cont-1{
+  background-image: url(../images/events/e1.jpg);
+}
+
+#cont-2{
+  background-image: url(../images/events/e2.jpg);
+}
+
+#cont-3{
+  background-image: url(../images/events/e3.jpg);
+}
+
 /* Poster card styles */
 .poster-card {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
