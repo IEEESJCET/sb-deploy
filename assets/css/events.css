@@ -121,6 +121,17 @@
 transform: translateX(0);
 }
 
+.carousel-inner .carousel-item img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.carousel-item .card {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /* 
 
 *,
